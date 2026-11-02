@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Tell output the colour of a fruit
+
+if [[ $# -ne 1 ]]; then
+   echo "Usage: $0 <fruit>" >&2
+   exit 1
+fi
+
+fruit="$1"
+
+case "$fruit" in
+    apple)
+	echo "Red or Green"
+	;;
+    banana)
+	echo "Yellow"
+	;;
+    orange)
+	echo "Orange"
+	;;
+    grape)
+	echo "Purple or Green"
+	;;
+    *)
+
+	echo "Unknown fruit: $fruit" >&2
+	exit 1
+	;;
+esac
+
