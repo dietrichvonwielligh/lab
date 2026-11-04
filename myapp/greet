@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Hello from my container!"
+
+echo "This is a new line"
+
+echo "This is another new line"
